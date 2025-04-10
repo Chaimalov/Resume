@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:rgb(240,240,240);stop-opacity:1" />
+    <stop offset="100%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
+  </linearGradient>
+  <circle cx="100" cy="100" r="100" fill="url(#gradient)" />
+  
+  <!-- Initials Text -->
+  <text 
+    x="100" 
+    y="125" 
+    font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" 
+    font-size="70" 
+    font-weight="500" 
+    text-anchor="middle" 
+    fill="#FFFFFF">
+    CM
+  </text>
+</svg>

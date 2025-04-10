@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --chevron: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' ><polyline points='6 9 12 15 18 9'/></svg>");
+  --default-font-family: "Assistant", sans-serif;
+}
+
+@utility content-chevron {
+  content: var(--chevron);
+}
+
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+
+    @media print {
+      font-size: 12px;
+    }
+
+    details {
+      @apply overflow-y-hidden details-content:[block-size:0] details-content:transition-discrete details-content:ms-4 open:details-content:[block-size:auto] details-content:transition-all duration-1000;
+
+      summary::marker {
+        content: none;
+      }
+
+      summary::before {
+        @apply size-4 content-chevron inline-block translate-y-0.5 transition-transform;
+      }
+
+      &[open] summary::before {
+        @apply -rotate-180;
+      }
+    }
+  }
+}
