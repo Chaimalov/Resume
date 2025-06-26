@@ -13,23 +13,23 @@
 
 **SDK & Library Development**
 
-- **Built TypeScript SDK and plugin system** for external consumption, adopted by 3 teams with custom CLI for publishing
+- **Built powerful TypeScript SDK and plugin system** for external consumption, adopted by 3 teams with custom CLI for publishing
 - **Implemented secure JavaScript sandbox** with DOM isolation, prototype chain protection, and runtime code execution
 - **Designed robust plugin architecture** with version management, hot rollback capabilities, and automated validation
-- **Created comprehensive documentation** and integration guides for plugin developers and third-party teams
+- **Co-created comprehensive deployment pipeline** for plugin validation and distribution to S3 infrastructure
+- **Created detailed documentation** and integration guides for plugin developers and third-party teams
 
 **Performance & Code Quality**
 
-- **Eliminated daily crashes** for 20K users and **reduced memory usage by 33%** through optimization and debugging
+- **Eliminated daily crashes** for 20K users and **reduced memory usage by 33%** through advanced optimization and debugging techniques
 - **Maintained high code quality** as lead code reviewer for 7-person team, establishing best practices and standards
-- **Implemented automated testing** and CI/CD pipelines for plugin validation and deployment to S3 infrastructure
-- **Optimized cross-browser compatibility** with virtual scrolling for large datasets and advanced DOM manipulation
+- **Optimized cross-browser compatibility** with lazy loading and lazy rendering for large datasets and advanced DOM manipulation
 
 **Technical Leadership**
 
-- **Refactored 70% of legacy codebase** including 100+ reusable components with modular, clean architecture
+- **Refactored 70% of legacy codebase** including 100+ reusable components with modern, modular architecture principles
 - **Mentored 20+ developers** on modern web development practices, TypeScript, and performance optimization
-- **Collaborated with cross-functional teams** including backend engineers and data specialists across multiple projects
+- **Collaborated with cross-functional teams** including backend engineers and data specialists across multiple high-impact projects
 
 ### Military Service | 8200 Unit (IDF)
 
@@ -39,15 +39,13 @@ Developer on classified operational systems with focus on frontend architecture 
 ## Key Achievements
 
 - **Unit Recognition Award & Early Rank Promotion** (Independence Day 2025) for SDK development and technical innovation
-- **Plugin SDK adopted by 3 teams** serving 20K+ users, eliminating integration bottlenecks
-- **Transformed critical system reliability** from daily crashes to zero downtime through performance optimization
 
 ## Technical Expertise
 
-**Frontend/SDK:** JavaScript (ES6+), TypeScript, DOM APIs, Virtual Scrolling, Cross-browser Compatibility  
+**Frontend/SDK:** JavaScript (ES6+), TypeScript, DOM APIs, Lazy Loading/Rendering, Cross-browser Compatibility  
 **Architecture:** Plugin Systems, JavaScript Sandboxing, Security Implementation, Modular Code Design  
 **Development:** Angular 15-19, SCSS, TailwindCSS, RxJS, Performance Optimization, Memory Management  
-**DevOps/Testing:** CI/CD Pipelines (GitLab), Automated Testing, Docker, Git, Code Reviews
+**DevOps/Pipeline:** CI/CD Pipeline Development (GitLab), Plugin Deployment, Docker, Git, Code Reviews
 
 ## Education
 
