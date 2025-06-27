@@ -1,310 +1,407 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaim Malov - Resume</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.4;
         color: #333;
         background: white;
         font-size: 11pt;
-    }
-    
-    .resume {
-        max-width: 10in;
+      }
+
+      .resume {
+        /* max-width: 10in; */
         margin: 0 auto;
         padding: 0.75in;
         min-height: 11in;
         background: white;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    
-    .header {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
         text-align: center;
         margin-bottom: 1.5rem;
         border-bottom: 2px solid #2563eb;
         padding-bottom: 1rem;
-    }
-    
-    .name {
+      }
+
+      .name {
         font-size: 2rem;
         font-weight: 700;
         color: #1e40af;
         margin-bottom: 0.3rem;
-    }
-    
-    .title {
+      }
+
+      .title {
         font-size: 1.1rem;
         color: #4b5563;
         font-weight: 500;
         margin-bottom: 0.5rem;
-    }
-    
-    .contact {
+      }
+
+      .contact {
         font-size: 0.95rem;
         color: #6b7280;
-    }
-    
-    .contact a {
+      }
+
+      .contact a {
         color: #2563eb;
         text-decoration: none;
-    }
-    
-    .section {
+      }
+
+      .section {
         margin-bottom: 1.3rem;
-    }
-    
-    .section-title {
+      }
+
+      .section-title {
         font-size: 1.1rem;
         font-weight: 700;
         color: #1e40af;
         border-bottom: 1px solid #e5e7eb;
         padding-bottom: 0.2rem;
         margin-bottom: 0.7rem;
-    }
-    
-    .job-title {
+      }
+
+      .job-title {
         font-weight: 600;
         color: #374151;
         font-size: 1rem;
-    }
-    
-    .company {
+      }
+
+      .company {
         color: #6b7280;
         font-style: italic;
         margin-bottom: 0.4rem;
-    }
-    
-    .date {
+      }
+
+      .date {
         color: #9ca3af;
         font-size: 0.9rem;
-    }
-    
-    .job-header {
+      }
+
+      .job-header {
         display: flex;
         justify-content: between;
         align-items: baseline;
         margin-bottom: 0.5rem;
-    }
-    
-    .subsection {
+      }
+
+      .subsection {
         margin-bottom: 0.8rem;
-    }
-    
-    .subsection-title {
+      }
+
+      .subsection-title {
         font-weight: 600;
         color: #374151;
         margin-bottom: 0.3rem;
         font-size: 0.95rem;
-    }
-    
-    .bullet-points {
+      }
+
+      .bullet-points {
         list-style: none;
         padding-left: 0;
-    }
-    
-    .bullet-points li {
+      }
+
+      .bullet-points li {
         margin-bottom: 0.3rem;
         padding-left: 1rem;
         position: relative;
-    }
-    
-    .bullet-points li:before {
+      }
+
+      .bullet-points li:before {
         content: "•";
         color: #2563eb;
         font-weight: bold;
         position: absolute;
         left: 0;
-    }
-    
-    .highlight {
+      }
+
+      .highlight {
         font-weight: 600;
         color: #1e40af;
-    }
-    
-    .skills-grid {
+      }
+
+      .skills-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 0.4rem;
-    }
-    
-    .skill-category {
+      }
+
+      .skill-category {
         display: flex;
         flex-wrap: wrap;
         gap: 0.2rem;
         align-items: baseline;
-    }
-    
-    .skill-label {
+      }
+
+      .skill-label {
         font-weight: 600;
         color: #374151;
         min-width: 100px;
-    }
-    
-    .skill-items {
+      }
+
+      .skill-items {
         color: #6b7280;
         flex: 1;
-    }
-    
-    .summary {
+      }
+
+      .summary {
         color: #4b5563;
         line-height: 1.5;
         text-align: justify;
-    }
-    
-    .achievements {
+      }
+
+      .achievements {
         background: #f8fafc;
         padding: 0.8rem;
         border-radius: 0.3rem;
         border-left: 4px solid #2563eb;
-    }
-    
-    .achievements ul {
+      }
+
+      .achievements ul {
         list-style: none;
         padding: 0;
-    }
-    
-    .achievements li {
+      }
+
+      .achievements li {
         margin-bottom: 0.4rem;
         padding-left: 1rem;
         position: relative;
-    }
-    
-    .achievements li:before {
+      }
+
+      .achievements li:before {
         content: "★";
         color: #2563eb;
         font-weight: bold;
         position: absolute;
         left: 0;
-    }
-    
-    @media print {
+      }
+
+      @media print {
         body {
-            font-size: 10.5pt;
+          font-size: 10.5pt;
         }
         .resume {
-            box-shadow: none;
-            padding: 0.5in;
+          box-shadow: none;
+          padding: 0.5in;
         }
-    }
-</style>
-
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <div class="resume">
-        <div class="header">
-            <div class="name">Chaim Malov</div>
-            <div class="title">Frontend Developer & UI Specialist</div>
-            <div class="contact">
-                050-6674239 | chaimalov@gmail.com | <a href="https://www.linkedin.com/in/chaim-malov">LinkedIn</a>
-            </div>
+      <div class="header">
+        <div class="name">Chaim Malov</div>
+        <div class="title">Frontend Developer & UI Specialist</div>
+        <div class="contact">
+          050-6674239 | chaimalov@gmail.com |
+          <a href="https://www.linkedin.com/in/chaim-malov">LinkedIn</a>
         </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <div class="section-title">Professional Experience</div>
-        
+
         <div class="job-header">
-            <div>
-                <div class="job-title">Frontend Developer & UI Lead | 8200 Unit (IDF)</div>
-                <div class="company">2022 - Present</div>
+          <div>
+            <div class="job-title">
+              Frontend Developer & UI Lead | 8200 Unit (IDF)
             </div>
+            <div class="company">2022 - Present</div>
+          </div>
         </div>
 
         <div class="subsection">
-            <div class="subsection-title">System Improvement</div>
-            <ul class="bullet-points">
-                <li><span class="highlight">Eliminated daily crashes</span> for 20K users and <span class="highlight">reduced memory usage by 33%</span> through optimization and refactoring</li>
-                <li><span class="highlight">Led UI redesign</span> transforming user satisfaction from complaints to most popular app in unit</li>
-                <li><span class="highlight">Refactored 70% of codebase</span> including 100+ components with virtual scrolling for large datasets</li>
-            </ul>
+          <div class="subsection-title">SDK & Library Development</div>
+          <ul class="bullet-points">
+            <li>
+              <span class="highlight"
+                >Built powerful TypeScript SDK and plugin system</span
+              >
+              for external consumption, adopted by 10 teams with custom CLI for
+              publishing
+            </li>
+            <li>
+              <span class="highlight"
+                >Implemented secure JavaScript sandbox</span
+              >
+              with DOM isolation, prototype chain protection, and runtime code
+              execution
+            </li>
+            <li>
+              <span class="highlight">Designed robust plugin architecture</span>
+              with version management, hot rollback capabilities, validation and
+              monitoring
+            </li>
+            <li>
+              <span class="highlight"
+                >Co-created comprehensive deployment pipeline</span
+              >
+              for plugin validation and distribution to S3 infrastructure, and
+              for an NX monorepo with 50+ packages and projects
+            </li>
+            <li>
+              <span class="highlight">Created detailed documentation</span> and
+              integration guides for plugin developers and third-party teams
+            </li>
+          </ul>
         </div>
 
         <div class="subsection">
-            <div class="subsection-title">Technical Development</div>
-            <ul class="bullet-points">
-                <li><span class="highlight">Co-developed plugin system</span> with custom JavaScript sandbox and runtime code execution capabilities</li>
-                <li><span class="highlight">Implemented micro-frontend architecture</span> merging 3 applications using Module Federation</li>
-                <li><span class="highlight">Built design system and UI library</span> adopted by 3 teams with comprehensive keyboard navigation</li>
-            </ul>
+          <div class="subsection-title">Performance & Code Quality</div>
+          <ul class="bullet-points">
+            <li>
+              <span class="highlight">Eliminated daily crashes</span> and
+              improved performance for 20K users and
+              <strong>reduced memory usage by 33%</strong> through advanced
+              optimization and debugging techniques
+            </li>
+            <li>
+              <span class="highlight">Maintained high code quality</span> as
+              lead code reviewer for 7-person team, establishing best practices
+              and standards
+            </li>
+            <li>
+              <span class="highlight"
+                >Optimized browser accessibility & performance</span
+              >
+              with lazy loading and lazy rendering for large datasets and
+              complex UI components, improving load times by 40%
+            </li>
+          </ul>
         </div>
 
         <div class="subsection">
-            <div class="subsection-title">Team Collaboration</div>
-            <ul class="bullet-points">
-                <li><span class="highlight">Mentored 20+ developers</span> and conduct code reviews for 7-person team</li>
-                <li><span class="highlight">Received unit recognition and early rank promotion</span> (Independence Day 2025) for technical contributions</li>
-            </ul>
+          <div class="subsection-title">Technical Leadership</div>
+          <ul class="bullet-points">
+            <li>
+              <span class="highlight">Refactored 70% of legacy codebase</span>
+              including 100+ reusable components with modern, modular
+              architecture principles
+            </li>
+            <li>
+              <span class="highlight">Mentored 20+ developers</span> on modern
+              web development practices, TypeScript, and performance
+              optimization
+            </li>
+            <li>
+              <span class="highlight"
+                >Collaborated with cross-functional teams</span
+              >
+              including backend engineers and data specialists across multiple
+              high-impact projects
+            </li>
+            <li>
+              <span class="highlight">Led frontend architecture design</span>
+              for multiple projects, focusing on scalability and maintainability
+            </li>
+            <li>
+              <span class="highlight">Conducted training sessions</span> on
+              advanced Angular features, RxJS, and performance optimization
+            </li>
+          </ul>
         </div>
 
-        <div style="margin-top: 1rem;">
-            <div class="job-title">Military Service | 8200 Unit (IDF)</div>
-            <div class="company">2021-2025</div>
-            <div style="margin-top: 0.3rem; color: #6b7280; font-size: 0.95rem;">Developer on classified operational systems with focus on frontend architecture and user experience.</div>
+        <div style="margin-top: 1rem">
+          <div class="job-title">Military Service | 8200 Unit (IDF)</div>
+          <div class="company">2021-2025</div>
+          <div style="margin-top: 0.3rem; color: #6b7280; font-size: 0.95rem">
+            Developer on classified operational systems with focus on frontend
+            architecture and user experience.
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <div class="section-title">Key Achievements</div>
         <div class="achievements">
-            <ul>
-                <li><span class="highlight">Unit Recognition Award & Early Rank Promotion</span> (Independence Day 2025) for technical innovation</li>
-                <li><span class="highlight">Successfully transformed critical system</span> from daily crashes to most reliable app serving 20K+ users</li>
-                <li><span class="highlight">Plugin system adoption</span> by multiple teams, improving development efficiency</li>
-            </ul>
+          <ul>
+            <li>
+              <span class="highlight"
+                >Unit Recognition Award & Early Rank Promotion</span
+              >
+              (Independence Day 2025) for technical innovation and dedication
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <div class="section-title">Technical Expertise</div>
         <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-label">Frontend:</div>
-                <div class="skill-items">Angular 15-19, TypeScript, Micro-frontends, Virtual Scrolling, SCSS, TailwindCSS, RxJS</div>
+          <div class="skill-category">
+            <div class="skill-label">Frontend/SDK:</div>
+            <div class="skill-items">
+              JavaScript (ES6+), TypeScript, DOM APIs, Lazy Loading/Rendering,
+              Cross-browser Compatibility
             </div>
-            <div class="skill-category">
-                <div class="skill-label">Architecture:</div>
-                <div class="skill-items">Plugin Systems, JavaScript Sandboxing, Design Systems, Performance Optimization</div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">Architecture:</div>
+            <div class="skill-items">
+              Plugin Systems, JavaScript Sandboxing, Security Implementation,
+              Modular Code Design
             </div>
-            <div class="skill-category">
-                <div class="skill-label">Backend:</div>
-                <div class="skill-items">NestJS, Node.js, PostgreSQL, MongoDB, Kafka, SignalR</div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">Development:</div>
+            <div class="skill-items">
+              Angular 15-19, SCSS, TailwindCSS, RxJS, Performance Optimization,
+              Memory Management
             </div>
-            <div class="skill-category">
-                <div class="skill-label">DevOps:</div>
-                <div class="skill-items">NX, GitLab CI/CD, Docker, Git</div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">DevOps/Pipeline:</div>
+            <div class="skill-items">
+              CI/CD Pipeline Development (GitLab), Plugin Deployment, Docker,
+              Git, Code Reviews
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <div class="section-title">Education</div>
-        <div style="margin-bottom: 0.4rem;">
-            <span class="highlight">Advanced Software Development</span> | Basmach - IDF School of Computer Science
+        <div style="margin-bottom: 0.4rem">
+          <span class="highlight">Advanced Software Development</span> | Basmach
+          - IDF School of Computer Science
         </div>
         <div>
-            <span class="highlight">Software Engineering</span> | Ort Ramat Gan College (High Honors)
+          <span class="highlight">Software Engineering</span> | Ort Ramat Gan
+          College (High Honors)
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <div class="section-title">Languages</div>
-        <div><span class="highlight">Hebrew:</span> Native | <span class="highlight">English:</span> Fluent (Canadian Citizenship)</div>
-    </div>
+        <div>
+          <span class="highlight">Hebrew:</span> Native |
+          <span class="highlight">English:</span> Fluent (Canadian Citizenship)
+        </div>
+      </div>
 
-    <div style="text-align: center; margin-top: 1.5rem; font-style: italic; color: #9ca3af; font-size: 0.9rem;">
-        Available for frontend development roles upon completion of military service
+      <div
+        style="
+          text-align: center;
+          margin-top: 1.5rem;
+          font-style: italic;
+          font-size: 0.9rem;
+        "
+      >
+        Available for frontend development roles upon completion of military
+        service
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>
